@@ -175,6 +175,8 @@ public class HttpUtility
         return jsonObject;
     }
 
+
+
     public void finalize() throws Throwable {
         this.httpClient.close();
         super.finalize();
