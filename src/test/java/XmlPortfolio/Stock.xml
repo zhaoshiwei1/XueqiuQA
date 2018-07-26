@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Stock suite" verbose="1" >
+    <test name = "Stock" >
+        <packages>
+            <package name = "StockBackEndTest" />
+        </packages>
+    </test>
+</suite>

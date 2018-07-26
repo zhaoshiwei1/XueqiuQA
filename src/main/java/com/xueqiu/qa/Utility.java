@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 public class Utility
 {
 
-    public String encryptMD5 (String plainText)
+    public static String encryptMD5(String plainText)
     {
         try {
             // 得到一个信息摘要器
