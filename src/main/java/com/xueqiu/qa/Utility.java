@@ -30,7 +30,7 @@ public class Utility
                 buffer.append(str);
             }
 
-            System.out.println(buffer.toString());
+            //System.out.println(buffer.toString());
             return buffer.toString();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
@@ -57,6 +57,10 @@ public class Utility
         parameterList.put(GlobalDefine.sid, testAccount.sid);
 
         JSONObject jsonObject = httpUtility.post(GlobalDefine.loginURL, parameterList);
+        //System.out.println(jsonObject.toString());
+
+        String access_token = jsonObject.getString(GlobalDefine.access_token);
+        //System.out.println(access_token);
 
         try {
             httpUtility.finalize();
@@ -65,8 +69,7 @@ public class Utility
         }
 
         CookieStore cookieStore = new BasicCookieStore();
-        BasicClientCookie xq_a_token = new BasicClientCookie(GlobalDefine.tokenName,
-                jsonObject.getString(GlobalDefine.access_token));
+        BasicClientCookie xq_a_token = new BasicClientCookie(GlobalDefine.tokenName, access_token);
         xq_a_token.setVersion(GlobalDefine.cookieVersion);
         xq_a_token.setDomain(GlobalDefine.domainURL);
         xq_a_token.setPath(GlobalDefine.path);
