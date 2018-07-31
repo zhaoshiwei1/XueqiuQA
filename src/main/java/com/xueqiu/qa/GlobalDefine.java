@@ -11,7 +11,7 @@ public class GlobalDefine
      *Client cookie setting key
      * */
     public static final Integer cookieVersion = 0;
-    public static final String domainURL = "xueqiu.com";
+    //public static final String domainURL = "stock.xueqiu.com";
     public static final String path = "/";
     public static final String tokenName = "xq_a_token";
     /*

@@ -40,7 +40,7 @@ public class Utility
 
 
 
-    public static CookieStore setCookieStore(TestAccount testAccount)
+    public static CookieStore setCookieStore(TestAccount testAccount, String domainURL)
     {
         HttpUtility httpUtility = new HttpUtility();
 
@@ -71,7 +71,10 @@ public class Utility
         CookieStore cookieStore = new BasicCookieStore();
         BasicClientCookie xq_a_token = new BasicClientCookie(GlobalDefine.tokenName, access_token);
         xq_a_token.setVersion(GlobalDefine.cookieVersion);
-        xq_a_token.setDomain(GlobalDefine.domainURL);
+        /*
+        * xq_a_token.setDomain(GlobalDefine.domainURL);
+        * */
+        xq_a_token.setDomain(domainURL);
         xq_a_token.setPath(GlobalDefine.path);
         cookieStore.addCookie(xq_a_token);
         return cookieStore;

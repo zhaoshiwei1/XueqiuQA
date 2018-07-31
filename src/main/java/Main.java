@@ -11,15 +11,14 @@ public class Main
 {
     public static void main(String[] args)
     {
-        String url = "https://xueqiu.com/v4/stock/portfolio/list.json";
+        String url = "https://stock.xueqiu.com/v5/stock/finance/cn/business.json";
+        String domainURL = "stock.xueqiu.com";
         TestAccount testAccount = new TestAccount();
         HttpUtility httpUtility = new HttpUtility();
-        CookieStore cookieStore = Utility.setCookieStore(testAccount);
+        CookieStore cookieStore = Utility.setCookieStore(testAccount, domainURL);
 
         Map<String, String> parameterList = new HashMap<>();
-        parameterList.put("category","2");
-        parameterList.put("system", "1");
-
+        parameterList.put("symbol","SH600519");
 
         JSONObject jsonObject = httpUtility.get(url, parameterList,cookieStore);
 
