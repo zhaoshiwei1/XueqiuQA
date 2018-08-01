@@ -1,33 +1,20 @@
-import com.xueqiu.qa.HttpUtility;
-import com.xueqiu.qa.TestAccount;
-import com.xueqiu.qa.Utility;
-import org.apache.http.client.CookieStore;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.xueqiu.qa.testAccount.TestAccount;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        String url = "https://stock.xueqiu.com/v5/stock/finance/cn/business.json";
-        String domainURL = "stock.xueqiu.com";
-        TestAccount testAccount = new TestAccount();
-        HttpUtility httpUtility = new HttpUtility();
-        CookieStore cookieStore = Utility.setCookieStore(testAccount, domainURL);
-
-        Map<String, String> parameterList = new HashMap<>();
-        parameterList.put("symbol","SH600519");
-
-        JSONObject jsonObject = httpUtility.get(url, parameterList,cookieStore);
-
-        try {
-            httpUtility.finalize();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
-
-        System.out.println(jsonObject.toString());
+        TestAccount testAccount = new TestAccount(
+                "18515668408",
+                "1234qwer",
+                "86",
+                "",
+                "WiCimxpj5H",
+                "TM69Da3uPkFzIdxpTEm6hp",
+                "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9",
+                "password",
+                "0",
+                "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9");
+        System.out.println(testAccount.getCookieStore(testAccount, "stock.xueqiu.com").toString());
     }
 }
