@@ -1,4 +1,4 @@
-package com.xueqiu.qa.utility;
+package com.xueqiu.qa.executor;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;

@@ -2,7 +2,7 @@ package com.xueqiu.qa.testAccount;
 
 
 import com.xueqiu.qa.GlobalDefine;
-import com.xueqiu.qa.utility.HttpUtility;
+import com.xueqiu.qa.executor.HttpUtility;
 import com.xueqiu.qa.utility.Utility;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
