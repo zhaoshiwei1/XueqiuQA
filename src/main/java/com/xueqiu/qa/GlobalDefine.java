@@ -19,4 +19,5 @@ public class GlobalDefine
     * */
     public static final String access_token = "access_token";
 
+    public static final String separator = "$$$";
 }
