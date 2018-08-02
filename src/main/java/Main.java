@@ -1,4 +1,9 @@
+import com.xueqiu.qa.executor.HttpMethod;
+import com.xueqiu.qa.executor.SchemaValidationExecutor;
 import com.xueqiu.qa.testAccount.TestAccount;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main
 {
@@ -15,6 +20,24 @@ public class Main
                 "password",
                 "0",
                 "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9");
-        System.out.println(testAccount.getCookieStore(testAccount, "stock.xueqiu.com").toString());
+        String requestURL = "https://stock.xueqiu.com/v4/stock/portfolio/list.json";
+
+        String domainURL = "stock.xueqiu.com";
+        String jsonSchemaFilePath = "src/main/java/getAllStocksPortfoliosWithArrayElement.json";
+
+        Map<String, String> parameterList = new HashMap<>();
+        parameterList.put("category", "2");
+        parameterList.put("system", "1");
+
+        SchemaValidationExecutor schemaValidationExecutor = new SchemaValidationExecutor(requestURL, domainURL, parameterList,
+                HttpMethod.get, testAccount, true, jsonSchemaFilePath);
+
+        if(schemaValidationExecutor.validate())
+        {
+            System.out.println("true");
+        }else
+        {
+            System.out.println("false");
+        }
     }
 }

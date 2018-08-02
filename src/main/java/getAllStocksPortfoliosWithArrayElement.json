@@ -1,0 +1,245 @@
+{
+  "$id": "https://xueqiu.com/v4/stock/portfolio/list.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "portfolios": {
+      "$id": "/properties/portfolios",
+      "type": "array",
+      "items": {
+        "$id": "/properties/portfolios/items",
+        "type": "object",
+        "properties": {
+          "portfolio": {
+            "$id": "/properties/portfolios/items/properties/portfolio",
+            "type": "object",
+            "properties": {
+              "id": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/id",
+                "type": "integer",
+                "title": "The Id Schema ",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "name": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/name",
+                "type": "string",
+                "title": "The Name Schema ",
+                "default": "",
+                "examples": [
+                  "全部"
+                ]
+              },
+              "orderId": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/orderId",
+                "type": "integer",
+                "title": "The Orderid Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "stocks": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/stocks",
+                "type": ["null","string"],
+                "title": "The Stocks Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "createAt": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/createAt",
+                "type": ["null","number"],
+                "title": "The Createat Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "category": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/category",
+                "type": "integer",
+                "title": "The Category Schema ",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              }
+            }
+          },
+          "include": {
+            "$id": "/properties/portfolios/items/properties/include",
+            "type": "boolean",
+            "title": "The Include Schema ",
+            "default": false,
+            "examples": [
+              false
+            ]
+          },
+          "type": {
+            "$id": "/properties/portfolios/items/properties/type",
+            "type": "integer",
+            "title": "The Type Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "name": {
+            "$id": "/properties/portfolios/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema ",
+            "default": "",
+            "examples": [
+              "全部"
+            ]
+          },
+          "id": {
+            "$id": "/properties/portfolios/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "orderId": {
+            "$id": "/properties/portfolios/items/properties/orderId",
+            "type": "integer",
+            "title": "The Orderid Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          }
+        }
+      },
+      "contains": {
+        "$id": "/properties/portfolios/items",
+        "type": "object",
+        "properties": {
+          "portfolio": {
+            "$id": "/properties/portfolios/items/properties/portfolio",
+            "type": "object",
+            "properties": {
+              "id": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/id",
+                "type": "integer",
+                "title": "The Id Schema ",
+                "default": 0,
+                "examples": [
+                  0
+                ],
+                "enum":[6]
+              },
+              "name": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/name",
+                "type": "string",
+                "title": "The Name Schema ",
+                "default": "",
+                "examples": [
+                  "全部"
+                ],
+                "enum":["kukukaka"]
+              },
+              "orderId": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/orderId",
+                "type": "integer",
+                "title": "The Orderid Schema ",
+                "default": 0,
+                "examples": [
+                  1
+                ],
+                "enum":[6]
+              },
+              "stocks": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/stocks",
+                "type": ["null","string"],
+                "title": "The Stocks Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ],
+                "enum":[""]
+              },
+              "createAt": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/createAt",
+                "type": ["null","number"],
+                "title": "The Createat Schema ",
+                "default": null,
+                "examples": [
+                  null
+                ],
+                "enum":[1530958960838]
+              },
+              "category": {
+                "$id": "/properties/portfolios/items/properties/portfolio/properties/category",
+                "type": "integer",
+                "title": "The Category Schema ",
+                "default": 0,
+                "examples": [
+                  2
+                ],
+                "enum":[2]
+              }
+            }
+          },
+          "include": {
+            "$id": "/properties/portfolios/items/properties/include",
+            "type": "boolean",
+            "title": "The Include Schema ",
+            "default": false,
+            "examples": [
+              false
+            ],
+            "enum":[false]
+          },
+          "type": {
+            "$id": "/properties/portfolios/items/properties/type",
+            "type": "integer",
+            "title": "The Type Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ],
+            "enum":[2]
+          },
+          "name": {
+            "$id": "/properties/portfolios/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema ",
+            "default": "",
+            "examples": [
+              "全部"
+            ],
+            "enum":["kukukaka"]
+          },
+          "id": {
+            "$id": "/properties/portfolios/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ],
+            "enum":[6]
+          },
+          "orderId": {
+            "$id": "/properties/portfolios/items/properties/orderId",
+            "type": "integer",
+            "title": "The Orderid Schema ",
+            "default": 0,
+            "examples": [
+              1
+            ],
+            "enum":[6]
+          }
+        }
+      }
+    }
+  }
+}

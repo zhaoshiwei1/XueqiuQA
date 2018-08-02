@@ -1,5 +1,9 @@
 package com.xueqiu.qa.utility;
 
+import org.apache.commons.io.FileUtils;
+import org.json.JSONObject;
+
+import java.io.File;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
@@ -57,5 +61,20 @@ public class Utility
         }
         return list;
     }
+
+    public static JSONObject fileToJson(String filePath)
+    {
+        JSONObject rawSchema = null;
+        try {
+            String input = FileUtils.readFileToString(new File(filePath), "UTF-8");
+            rawSchema = new JSONObject(input);
+        } catch (Exception e) {
+            e.getStackTrace();
+            return rawSchema;
+        }
+
+        return rawSchema;
+    }
+
 
 }
