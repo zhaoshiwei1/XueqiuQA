@@ -23,7 +23,11 @@ public class SchemaValidation
         }
         catch (ValidationException e)
         {
-            System.out.println(e.getAllMessages());
+            for (String msg : e.getAllMessages())
+            {
+                System.out.println(msg);
+            }
+
         }
 
         return false;

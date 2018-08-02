@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/XueqiuQA.iml" afterPath="$PROJECT_DIR$/XueqiuQA.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/TestAccountAuthorized.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +42,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="370">
+              <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoHttpConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DoHttpConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="-182">
+              <caret line="65" column="46" lean-forward="true" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SchemaValidationExecutor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SchemaValidationExecutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="349">
+              <caret line="46" column="57" lean-forward="false" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +100,8 @@
       <file leaf-file-name="SchemaValidation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="294">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +122,8 @@
       <file leaf-file-name="TestAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="52" column="70" lean-forward="false" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
+            <state relative-caret-position="-47">
+              <caret line="62" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,10 +181,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/TestAccountAuthorized.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
@@ -813,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533201040430</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Start Executor: III&#10;debug&#10;Todo:&#10;1, Log&#10;2, SchemaException">
+      <created>1533209325308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533209325308</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -933,11 +936,12 @@
     <MESSAGE value="Start Executor: I&#10;Missing Utility&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
     <MESSAGE value="Start Executor: I&#10;doRequest&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
     <MESSAGE value="Start Executor: II&#10;Do SchemaValidationExecutor&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Executor: II&#10;Do SchemaValidationExecutor&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
+    <MESSAGE value="Start Executor: III&#10;debug&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start Executor: III&#10;debug&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1212,16 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-302">
@@ -1246,26 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="52" column="70" lean-forward="false" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1284,10 +1258,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="62" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="294">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1296,8 +1290,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="349">
+          <caret line="46" column="57" lean-forward="false" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="65" column="46" lean-forward="true" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

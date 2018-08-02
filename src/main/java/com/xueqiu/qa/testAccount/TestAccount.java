@@ -53,9 +53,15 @@ public class TestAccount
         HttpResponse httpResponse = httpUtility.post(GlobalDefine.loginURL, loginParameterList);
         if(httpResponse.getStatusLine().getStatusCode() == 200)
         {
+/*
+            System.out.println("Branch 200");
+*/
             String strResult = "";
             try {
                 strResult = EntityUtils.toString(httpResponse.getEntity());
+/*
+                System.out.println(strResult);
+*/
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -76,6 +82,9 @@ public class TestAccount
             return cookieStore;
         }else
         {
+/*
+            System.out.println("Branch False");
+*/
             return null;
         }
 

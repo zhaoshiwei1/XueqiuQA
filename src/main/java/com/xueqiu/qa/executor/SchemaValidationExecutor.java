@@ -35,6 +35,9 @@ public class SchemaValidationExecutor
     public boolean validate()
     {
         JSONObject expectedJsonObject = fileToJson(this.jsonSchemaFilePath);
+/*
+        System.out.println(expectedJsonObject);
+*/
         if(null == expectedJsonObject)
         {
             System.out.println("Json Schema File Issue");
@@ -42,7 +45,9 @@ public class SchemaValidationExecutor
         }else
         {
             String strJsonObject = this.doHttpConfig.doRequest();
+/*
             System.out.println(strJsonObject);
+*/
             JSONObject actualJsonObject = new JSONObject(strJsonObject);
             return this.schemaValidation.validation(actualJsonObject, expectedJsonObject);
         }

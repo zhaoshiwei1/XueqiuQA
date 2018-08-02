@@ -1,6 +1,7 @@
 import com.xueqiu.qa.executor.HttpMethod;
 import com.xueqiu.qa.executor.SchemaValidationExecutor;
 import com.xueqiu.qa.testAccount.TestAccount;
+import org.apache.http.client.CookieStore;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,9 +21,15 @@ public class Main
                 "password",
                 "0",
                 "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9");
-        String requestURL = "https://stock.xueqiu.com/v4/stock/portfolio/list.json";
 
-        String domainURL = "stock.xueqiu.com";
+/*
+        CookieStore cookieStore = testAccount.getCookieStore(testAccount, "stock.xueqiu.com");
+*/
+
+
+        String requestURL = "https://xueqiu.com/v4/stock/portfolio/list.json";
+
+        String domainURL = "xueqiu.com";
         String jsonSchemaFilePath = "src/main/java/getAllStocksPortfoliosWithArrayElement.json";
 
         Map<String, String> parameterList = new HashMap<>();
@@ -30,7 +37,7 @@ public class Main
         parameterList.put("system", "1");
 
         SchemaValidationExecutor schemaValidationExecutor = new SchemaValidationExecutor(requestURL, domainURL, parameterList,
-                HttpMethod.get, testAccount, true, jsonSchemaFilePath);
+                HttpMethod.get, testAccount, false, jsonSchemaFilePath);
 
         if(schemaValidationExecutor.validate())
         {
