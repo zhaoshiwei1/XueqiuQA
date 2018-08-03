@@ -37,7 +37,7 @@ public class Main
         parameterList.put("system", "1");
 
         SchemaValidationExecutor schemaValidationExecutor = new SchemaValidationExecutor(requestURL, domainURL, parameterList,
-                HttpMethod.get, testAccount, false, jsonSchemaFilePath);
+                HttpMethod.get, testAccount, true, jsonSchemaFilePath);
 
         if(schemaValidationExecutor.validate())
         {
@@ -45,6 +45,11 @@ public class Main
         }else
         {
             System.out.println("false");
+        }
+        try {
+            schemaValidationExecutor._finalize();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
         }
     }
 }

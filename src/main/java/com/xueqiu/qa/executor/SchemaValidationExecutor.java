@@ -53,4 +53,12 @@ public class SchemaValidationExecutor
         }
     }
 
+    public void _finalize()
+    {
+        try {
+            this.doHttpConfig.finalize();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
 }

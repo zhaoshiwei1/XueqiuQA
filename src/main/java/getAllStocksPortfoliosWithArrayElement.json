@@ -144,7 +144,7 @@
                 "examples": [
                   "全部"
                 ],
-                "enum":["kukukaka"]
+                "enum":["gdgd"]
               },
               "orderId": {
                 "$id": "/properties/portfolios/items/properties/portfolio/properties/orderId",
@@ -163,8 +163,7 @@
                 "default": null,
                 "examples": [
                   null
-                ],
-                "enum":[""]
+                ]
               },
               "createAt": {
                 "$id": "/properties/portfolios/items/properties/portfolio/properties/createAt",
@@ -173,8 +172,8 @@
                 "default": null,
                 "examples": [
                   null
-                ],
-                "enum":[1530958960838]
+                ]
+
               },
               "category": {
                 "$id": "/properties/portfolios/items/properties/portfolio/properties/category",
@@ -216,7 +215,7 @@
             "examples": [
               "全部"
             ],
-            "enum":["kukukaka"]
+            "enum":["gdgd*"]
           },
           "id": {
             "$id": "/properties/portfolios/items/properties/id",
