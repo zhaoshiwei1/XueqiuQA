@@ -4,6 +4,8 @@
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json" afterPath="$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json" />
     </list>
@@ -21,18 +23,28 @@
       <file leaf-file-name="HttpUtility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+            <state relative-caret-position="-779">
+              <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stock.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/XmlPortfolio/Stock.xml">
+      <file leaf-file-name="DoHttpConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="-704">
+              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpMethod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -51,30 +63,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getAllStocksPortfoliosWithArrayElement.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchemaValidationExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="705">
+              <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,19 +75,31 @@
       <file leaf-file-name="GlobalDefine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="315">
+              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java">
+      <file leaf-file-name="getAllStocksPortfoliosWithArrayElement.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            <state relative-caret-position="280">
+              <caret line="154" column="15" lean-forward="true" selection-start-line="154" selection-start-column="15" selection-end-line="154" selection-end-column="15" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SchemaValidationExecutor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +107,8 @@
       <file leaf-file-name="SchemaValidation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="223">
+              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +119,7 @@
       <file leaf-file-name="TestAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="833">
               <caret line="62" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,6 +143,7 @@
       <find>enu</find>
       <find>dgdg</find>
       <find>dg</find>
+      <find>gdgd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,25 +177,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/HttpUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/Executor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/TestAccountAuthorized.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="44" />
-    <option name="y" value="23" />
-    <option name="width" value="1396" />
-    <option name="height" value="877" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,7 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,13 +277,6 @@
               <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
               <item name="XueqiuQA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XueqiuQA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,9 +306,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/zhaoshiwei/IdeaProjects/XueqiuQA/src/test/java/XmlPortfolio/Stock.xml">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -681,8 +675,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG./Users/zhaoshiwei/IdeaProjects/XueqiuQA/src/test/java/XmlPortfolio/Stock.xml" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG./Users/zhaoshiwei/IdeaProjects/XueqiuQA/src/test/java/XmlPortfolio/Stock.xml" />
         <item index="2" class="java.lang.String" itemvalue="TestNG./Users/zhaoshiwei/IdeaProjects/XueqiuQA/src/test/java/TestNGPortfolio/TestNG.xml" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.TestDemo" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.TestDemo.firstTest" />
@@ -829,7 +823,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533212469668</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化（testRail Integration）&#10;Todo:&#10;1, Log">
+      <created>1533280406434</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533280406434</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,20 +874,20 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5200286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.52288985" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.47997138" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.47711015" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33010882" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3004292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -954,7 +955,8 @@
     <MESSAGE value="Start Executor: II&#10;Do SchemaValidationExecutor&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
     <MESSAGE value="Start Executor: III&#10;debug&#10;Todo:&#10;1, Log&#10;2, SchemaException" />
     <MESSAGE value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化&#10;Todo:&#10;1, Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化&#10;Todo:&#10;1, Log" />
+    <MESSAGE value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化（testRail Integration）&#10;Todo:&#10;1, Log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化（testRail Integration）&#10;Todo:&#10;1, Log" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1182,14 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/everit-org/json-schema/org.everit.json.schema/1.9.1/org.everit.json.schema-1.9.1.jar!/org/everit/json/schema/Validator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1204,128 +1198,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/everit-org/json-schema/org.everit.json.schema/1.9.1/org.everit.json.schema-1.9.1.jar!/org/everit/json/schema/ValidationException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <marker date="1531003538147" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1531003538147" expanded="false" signature="146:479" ph="..." />
-            <marker date="1531003538147" expanded="true" signature="929:1073" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="1156:1669" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="1230:1295" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="1434:1500" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="1521:1606" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="1765:2067" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="2186:2412" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="2418:2436" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="2527:2604" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="2703:2775" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="2781:2799" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="2929:3201" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="3339:3588" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="3594:3612" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="3699:3794" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="3800:3818" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="3921:4064" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="4175:4295" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="4301:4319" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="4478:4614" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="4797:5088" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="5094:5112" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="5176:5269" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="5460:5570" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="5576:5594" ph="/**...*/" />
-            <marker date="1531003538147" expanded="true" signature="5726:5815" ph="{...}" />
-            <marker date="1531003538147" expanded="false" signature="5867:5878" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="5932:5938" ph=" }" />
-            <marker date="1531003538147" expanded="false" signature="5999:6010" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="6040:6046" ph=" }" />
-            <marker date="1531003538147" expanded="true" signature="6089:6277" ph="{...}" />
-            <marker date="1531003538147" expanded="false" signature="6309:6320" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="6384:6390" ph=" }" />
-            <marker date="1531003538147" expanded="false" signature="6427:6438" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="6464:6470" ph=" }" />
-            <marker date="1531003538147" expanded="true" signature="6514:6613" ph="{...}" />
-            <marker date="1531003538147" expanded="false" signature="6652:6663" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="6690:6696" ph=" }" />
-            <marker date="1531003538147" expanded="false" signature="6753:6764" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="6815:6821" ph=" }" />
-            <marker date="1531003538147" expanded="true" signature="6902:7491" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="7243:7303" ph="{...}" />
-            <marker date="1531003538147" expanded="false" signature="7527:7538" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="7587:7593" ph=" }" />
-            <marker date="1531003538147" expanded="false" signature="7625:7636" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="7656:7662" ph=" }" />
-            <marker date="1531003538147" expanded="true" signature="7695:8389" ph="{...}" />
-            <marker date="1531003538147" expanded="false" signature="8428:8439" ph=" { " />
-            <marker date="1531003538147" expanded="false" signature="8466:8472" ph=" }" />
-            <marker date="1531003538147" expanded="true" signature="8510:9605" ph="{...}" />
-            <marker date="1531003538147" expanded="true" signature="9633:10004" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="62" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1338,6 +1221,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="62" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StockBackEndTest/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1346,18 +1239,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-779">
+          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/getAllStocksPortfoliosWithArrayElement.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="280">
+          <caret line="154" column="15" lean-forward="true" selection-start-line="154" selection-start-column="15" selection-end-line="154" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="705">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

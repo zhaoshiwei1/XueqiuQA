@@ -23,6 +23,10 @@ public class SchemaValidation
         }
         catch (ValidationException e)
         {
+
+/*
+            System.out.println(e.toJSON());
+*/
             for (String msg : e.getAllMessages())
             {
                 System.out.println(msg);

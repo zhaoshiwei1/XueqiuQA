@@ -215,7 +215,7 @@
             "examples": [
               "全部"
             ],
-            "enum":["gdgd*"]
+            "enum":["gdgd"]
           },
           "id": {
             "$id": "/properties/portfolios/items/properties/id",

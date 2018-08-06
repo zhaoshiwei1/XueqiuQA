@@ -1,5 +1,6 @@
 package com.xueqiu.qa.executor;
 
+import com.xueqiu.qa.GlobalDefine;
 import com.xueqiu.qa.testAccount.TestAccount;
 import org.apache.http.client.CookieStore;
 import org.json.JSONObject;
@@ -48,8 +49,31 @@ public class SchemaValidationExecutor
 /*
             System.out.println(strJsonObject);
 */
-            JSONObject actualJsonObject = new JSONObject(strJsonObject);
-            return this.schemaValidation.validation(actualJsonObject, expectedJsonObject);
+            if(null == strJsonObject)
+            {
+                System.out.println("Response Not Get Issue");
+                return false;
+            }else
+            {
+/*
+                System.out.println(strJsonObject);
+*/
+                String[] list = strJsonObject.split(GlobalDefine.separator);
+                if(1 == list.length)
+                {
+                    JSONObject actualJsonObject = new JSONObject(strJsonObject);
+                    return this.schemaValidation.validation(actualJsonObject, expectedJsonObject);
+                }else
+                {
+/*
+                    System.out.println(strJsonObject);
+*/
+                    System.out.println(list[0]);
+                    System.out.println(list[1]);
+                    return false;
+                }
+
+            }
         }
     }
 
@@ -57,6 +81,9 @@ public class SchemaValidationExecutor
     {
         try {
             this.doHttpConfig.finalize();
+/*
+            System.out.println("Test String");
+*/
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
