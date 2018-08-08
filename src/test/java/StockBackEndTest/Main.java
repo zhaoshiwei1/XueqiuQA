@@ -1,3 +1,5 @@
+package StockBackEndTest;
+
 import com.xueqiu.qa.ExecutorUtility.HttpMethod;
 import com.xueqiu.qa.ExecutorUtility.SchemaValidationExecutor;
 import com.xueqiu.qa.GlobalDefine.TestAccount;
@@ -24,7 +26,7 @@ public class Main
         String requestURL = "https://xueqiu.com/v4/stock/portfolio/list.json";
 
         String domainURL = "xueqiu.com";
-        String jsonSchemaFilePath = "src/main/java/getAllStocksPortfoliosWithArrayElement.json";
+        String jsonSchemaFilePath = "src/test/java/getAllStocksPortfoliosWithArrayElement.json";
 
         Map<String, String> parameterList = new HashMap<>();
         parameterList.put("category", "2");
