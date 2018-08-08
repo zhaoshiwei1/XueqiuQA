@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/DoHttpConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpMethod.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/HttpUtility.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/SchemaValidationExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/SchemaValidationExecutor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/testAccount/TestAccount.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/utility/Utility.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -826,7 +817,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533527397004</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Modify the architecture!">
+      <created>1533698557366</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1533698557366</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -953,7 +951,8 @@
     <MESSAGE value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化&#10;Todo:&#10;1, Log" />
     <MESSAGE value="Start Executor: III&#10;decode结果需要做容错， everit校验信息需要细化（testRail Integration）&#10;Todo:&#10;1, Log" />
     <MESSAGE value="Start Executor: III&#10;decode容错完成， &#10;everit校验信息无法细化， &#10;TestRail准备集成&#10;&#10;Todo:&#10;1, Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start Executor: III&#10;decode容错完成， &#10;everit校验信息无法细化， &#10;TestRail准备集成&#10;&#10;Todo:&#10;1, Log" />
+    <MESSAGE value="Modify the architecture!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify the architecture!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
