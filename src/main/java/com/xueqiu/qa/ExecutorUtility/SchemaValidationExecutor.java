@@ -1,13 +1,13 @@
-package com.xueqiu.qa.executor;
+package com.xueqiu.qa.ExecutorUtility;
 
-import com.xueqiu.qa.GlobalDefine;
-import com.xueqiu.qa.testAccount.TestAccount;
+import com.xueqiu.qa.GlobalDefine.GlobalDefine;
+import com.xueqiu.qa.GlobalDefine.TestAccount;
 import org.apache.http.client.CookieStore;
 import org.json.JSONObject;
 
 import java.util.Map;
 
-import static com.xueqiu.qa.utility.Utility.fileToJson;
+import static com.xueqiu.qa.ExecutorUtility.Utility.fileToJson;
 
 public class SchemaValidationExecutor
 {

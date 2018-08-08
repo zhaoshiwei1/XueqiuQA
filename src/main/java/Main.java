@@ -1,8 +1,6 @@
-import com.xueqiu.qa.GlobalDefine;
-import com.xueqiu.qa.executor.HttpMethod;
-import com.xueqiu.qa.executor.SchemaValidationExecutor;
-import com.xueqiu.qa.testAccount.TestAccount;
-import org.apache.http.client.CookieStore;
+import com.xueqiu.qa.ExecutorUtility.HttpMethod;
+import com.xueqiu.qa.ExecutorUtility.SchemaValidationExecutor;
+import com.xueqiu.qa.GlobalDefine.TestAccount;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,11 +20,6 @@ public class Main
                 "password",
                 "0",
                 "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9");
-
-
-        CookieStore cookieStore = testAccount.getCookieStore(testAccount, "stock.xueqiu.com");
-
-
 
         String requestURL = "https://xueqiu.com/v4/stock/portfolio/list.json";
 

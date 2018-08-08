@@ -1,9 +1,8 @@
-package com.xueqiu.qa.testAccount;
+package com.xueqiu.qa.GlobalDefine;
 
 
-import com.xueqiu.qa.GlobalDefine;
-import com.xueqiu.qa.executor.HttpUtility;
-import com.xueqiu.qa.utility.Utility;
+import com.xueqiu.qa.ExecutorUtility.HttpUtility;
+import com.xueqiu.qa.ExecutorUtility.Utility;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.impl.client.BasicCookieStore;

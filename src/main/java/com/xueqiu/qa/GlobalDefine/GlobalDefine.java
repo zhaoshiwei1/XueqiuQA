@@ -1,4 +1,4 @@
-package com.xueqiu.qa;
+package com.xueqiu.qa.GlobalDefine;
 
 public class GlobalDefine
 {
