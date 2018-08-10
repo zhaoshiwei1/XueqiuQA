@@ -7,26 +7,26 @@ import org.json.JSONObject;
 
 public class SchemaValidation
 {
+    public JSONObject actualJsonObject;
+    public JSONObject expectedJsonObject;
 
-    public SchemaValidation()
+    public SchemaValidation(JSONObject actualJsonObject, JSONObject expectedJsonObject)
     {
-
+        this.actualJsonObject = actualJsonObject;
+        this.expectedJsonObject = expectedJsonObject;
     }
 
-    public boolean validation(JSONObject actualJsonObject, JSONObject expectedJsonObject)
+    public boolean validation()
     {
 
         try {
-            Schema schema = SchemaLoader.load(expectedJsonObject);
-            schema.validate(actualJsonObject);
+            Schema schema = SchemaLoader.load(this.expectedJsonObject);
+            schema.validate(this.actualJsonObject);
             return true;
         }
         catch (ValidationException e)
         {
 
-/*
-            System.out.println(e.toJSON());
-*/
             for (String msg : e.getAllMessages())
             {
                 System.out.println(msg);

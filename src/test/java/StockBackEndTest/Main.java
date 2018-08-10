@@ -1,11 +1,12 @@
 package StockBackEndTest;
 
-import com.xueqiu.qa.ExecutorUtility.HttpMethod;
-import com.xueqiu.qa.ExecutorUtility.SchemaValidationExecutor;
 import com.xueqiu.qa.GlobalDefine.TestAccount;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Iterator;
+
+import static com.xueqiu.qa.ExecutorUtility.Utility.fileToJson;
 
 public class Main
 {
@@ -23,31 +24,25 @@ public class Main
                 "0",
                 "BDE2CF5F-5F88-4644-B5E5-87FB55841DC9");
 
-        String requestURL = "https://xueqiu.com/v4/stock/portfolio/list.json";
+        JSONObject jsonObject = fileToJson("src/test/java/StockBackEndTest/Schema/response.json");
 
-        String domainURL = "xueqiu.com";
-        String jsonSchemaFilePath = "src/test/java/getAllStocksPortfoliosWithArrayElement.json";
+//        Iterator<?> iterator = jsonObject.keys();
+//        while (iterator.hasNext())
+//        {
+//           String key = (String) iterator.next();
+//           System.out.println(key);
+//           System.out.println(jsonObject.get(key));
+//        }
 
-        Map<String, String> parameterList = new HashMap<>();
-        parameterList.put("category", "2");
-        parameterList.put("system", "1");
-
-        SchemaValidationExecutor schemaValidationExecutor = new SchemaValidationExecutor(requestURL, domainURL, parameterList,
-                HttpMethod.get, testAccount, true, jsonSchemaFilePath);
-
-        if(schemaValidationExecutor.validate())
+        Object object = jsonObject.get("arrayList");
+//        System.out.println("****************************************");
+//        System.out.println(object);
+        if (object instanceof JSONObject)
         {
-            System.out.println("true");
+            System.out.println(((JSONArray)object).get(1));
         }else
         {
-            System.out.println("false");
+            System.out.println("Failed");
         }
-        try {
-            schemaValidationExecutor._finalize();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
-
-
     }
 }

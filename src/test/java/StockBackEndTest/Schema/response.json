@@ -1,0 +1,24 @@
+{
+  "id":0,
+  "name":"peach",
+  "properties":{
+    "water":"1",
+    "stone":"2"
+  },
+  "arrayList":[
+    {
+      "cat":"fish",
+      "Panda":{
+        "country":"china",
+        "food":"bamboo"
+      }
+    },
+    {
+      "dog":"meat",
+      "OpenWild":{
+        "country":"canada",
+        "size":1000
+      }
+    }
+  ]
+}
