@@ -7,6 +7,8 @@ import com.xueqiu.qa.GlobalDefine.TestAccount;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 
 import static com.xueqiu.qa.ExecutorUtility.Utility.fileToJson;
@@ -19,7 +21,7 @@ public abstract class XqApi
     private Boolean ifAuthorized = false;
     private String jsonSchemaFilePath = null;
 
-    protected void setJsonSchemaFilePath(String jsonSchemaFilePath)
+    protected final void setJsonSchemaFilePath(String jsonSchemaFilePath)
     {
         this.jsonSchemaFilePath = jsonSchemaFilePath;
     }
@@ -33,7 +35,7 @@ public abstract class XqApi
     }
 
 
-    protected JSONObject getResponse(Map<String, String> parameterList)
+    protected final JSONObject getResponse(Map<String, String> parameterList)
     {
         this.ifAuthorized = false;
         HttpExecutor httpExecutor = new HttpExecutor(this.requestURL, this.domainURL, parameterList, this.httpMethod,
@@ -50,7 +52,7 @@ public abstract class XqApi
         }
     }
 
-    protected JSONObject getResponse(Map<String, String> parameterList, TestAccount testAccount)
+    protected final JSONObject getResponse(Map<String, String> parameterList, TestAccount testAccount)
     {
         if(null == testAccount)
         {
@@ -75,7 +77,7 @@ public abstract class XqApi
 
     }
 
-    protected Boolean SchemaValidation(JSONObject actualJsonObject) {
+    protected final Boolean SchemaValidation(JSONObject actualJsonObject) {
 
         if(this.jsonSchemaFilePath.equals(null))
         {
@@ -98,14 +100,9 @@ public abstract class XqApi
 
     }
 
-    public abstract Object jsonAnalyze();
-
-    public JSONObject getJsonNode(String key, JSONObject jsonObject)
+    protected final JSONObject getJsonObject(String key, JSONObject jsonObject)
     {
-        if (null == jsonObject)
-        {
-            return null;
-        }else
+        if(preTreatment(key, jsonObject))
         {
             Object object = jsonObject.get(key);
             if(object instanceof  JSONObject)
@@ -113,13 +110,106 @@ public abstract class XqApi
                 return (JSONObject) object;
             }else
             {
+                System.out.println("Value of " + key + " is not JSONObject");
                 return null;
+            }
+        }
+        return null;
+    }
+
+    protected final Object getJsonProperty(String key, JSONObject jsonObject)
+    {
+        if(preTreatment(key,jsonObject))
+        {
+            Object object = jsonObject.get(key);
+            if(object instanceof String)
+            {
+                return object;
+            }
+            else if(object instanceof Number)
+            {
+                return object;
+            }
+            else if(object instanceof Boolean)
+            {
+                return object;
+            }
+            else if(object == null)
+            {
+                return null;
+            }
+        }
+        return null;
+    }
+
+    protected final JSONArray getJsonArray(String key, JSONObject jsonObject)
+    {
+        if(preTreatment(key, jsonObject))
+        {
+            Object object = jsonObject.get(key);
+            if(object instanceof JSONArray)
+            {
+                return (JSONArray) object;
+            }else
+            {
+                System.out.println("Value of " + key + " is Not JSONArray");
+                return null;
+            }
+        }
+        return null;
+    }
+
+    public abstract JSONObject getJsonAtArray(int index, JSONArray jsonArray);
+
+    public abstract Object getPropertyAtArray(int index, JSONArray jsonArray);
+
+    private final boolean preTreatment(String key, JSONObject jsonObject)
+    {
+        if(null == jsonObject)
+        {
+            System.out.println("Parameter object is NULL");
+            return false;
+        }else if(!(jsonObject instanceof JSONObject)) {
+            System.out.println("Parameter object is not JSONObject");
+            return false;
+        }else{
+            ArrayList<String> list = new ArrayList<>();
+            Iterator<?> iterator = jsonObject.keys();
+            while (iterator.hasNext())
+            {
+                list.add((String)iterator.next());
+            }
+            if(list.contains(key))
+            {
+                return true;
+            }else
+            {
+                System.out.println("Key: " + key + " Not Found");
+                return false;
             }
         }
     }
 
-    public abstract Object getJsonProperty(String key, JSONObject jsonObject);
-
-    public abstract JSONArray getJsonArray(int index, JSONObject jsonObject);
+    private final boolean preTreatment(int index, JSONArray jsonArray)
+    {
+        if(null == jsonArray)
+        {
+            System.out.println("Parameter object is NULL");
+            return false;
+        }else if(!(jsonArray instanceof JSONArray))
+        {
+            System.out.println("Parameter object is not JSONArray");
+            return false;
+        }else{
+            if(index < jsonArray.length())
+            {
+                return true;
+            }else
+            {
+                System.out.println(index + " : Out of Index Range");
+                return false;
+            }
+        }
+    }
 
 }

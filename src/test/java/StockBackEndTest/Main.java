@@ -4,6 +4,7 @@ import com.xueqiu.qa.GlobalDefine.TestAccount;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 import static com.xueqiu.qa.ExecutorUtility.Utility.fileToJson;
@@ -26,23 +27,8 @@ public class Main
 
         JSONObject jsonObject = fileToJson("src/test/java/StockBackEndTest/Schema/response.json");
 
-//        Iterator<?> iterator = jsonObject.keys();
-//        while (iterator.hasNext())
-//        {
-//           String key = (String) iterator.next();
-//           System.out.println(key);
-//           System.out.println(jsonObject.get(key));
-//        }
+        JSONArray jsonArray = (JSONArray) jsonObject.get("hook");
 
-        Object object = jsonObject.get("arrayList");
-//        System.out.println("****************************************");
-//        System.out.println(object);
-        if (object instanceof JSONObject)
-        {
-            System.out.println(((JSONArray)object).get(1));
-        }else
-        {
-            System.out.println("Failed");
-        }
+        System.out.println(jsonArray.get(2));
     }
 }
