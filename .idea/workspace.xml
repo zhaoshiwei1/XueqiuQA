@@ -4,9 +4,6 @@
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StockBackEndTest/Main.java" afterPath="$PROJECT_DIR$/src/test/java/StockBackEndTest/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StockBackEndTest/Schema/response.json" afterPath="$PROJECT_DIR$/src/test/java/StockBackEndTest/Schema/response.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,11 +44,21 @@
       <file leaf-file-name="XqApi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="163" column="76" lean-forward="false" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
+            <state relative-caret-position="1214">
+              <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stock.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/XmlPortfolio/Stock.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,18 +101,8 @@
       <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
+            <state relative-caret-position="318">
               <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchemaValidation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/SchemaValidation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -206,8 +203,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/SchemaValidation.java" />
         <option value="$PROJECT_DIR$/src/test/java/StockBackEndTest/Schema/response.json" />
         <option value="$PROJECT_DIR$/src/test/java/StockBackEndTest/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" />
       </list>
     </option>
   </component>
@@ -323,6 +320,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="StockBackEndTest" type="462c0819:PsiDirectoryNode" />
               <item name="Schema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XueqiuQA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="XmlPortfolio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -877,7 +882,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533887047611</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="API Base class on-going!">
+      <created>1533894805698</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1533894805698</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1007,7 +1019,8 @@
     <MESSAGE value="Modify the architecture!" />
     <MESSAGE value="Complete the base api" />
     <MESSAGE value="change the architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the architecture" />
+    <MESSAGE value="API Base class on-going!" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Base class on-going!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1181,13 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/XmlPortfolio/Stock.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StockBackEndTest/Schema/getAllStocksPortfoliosWithArrayElement.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1261,14 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1317,10 +1315,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/XmlPortfolio/Stock.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="163" column="76" lean-forward="false" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
+        <state relative-caret-position="1214">
+          <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

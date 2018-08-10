@@ -122,21 +122,12 @@ public abstract class XqApi
         if(preTreatment(key,jsonObject))
         {
             Object object = jsonObject.get(key);
-            if(object instanceof String)
+            if(object instanceof String || object instanceof Number || object instanceof Boolean || object ==null)
             {
                 return object;
-            }
-            else if(object instanceof Number)
+            }else
             {
-                return object;
-            }
-            else if(object instanceof Boolean)
-            {
-                return object;
-            }
-            else if(object == null)
-            {
-                return null;
+                System.out.println("Type of " + key + " Error");
             }
         }
         return null;
@@ -153,15 +144,42 @@ public abstract class XqApi
             }else
             {
                 System.out.println("Value of " + key + " is Not JSONArray");
-                return null;
             }
         }
         return null;
     }
 
-    public abstract JSONObject getJsonAtArray(int index, JSONArray jsonArray);
+    protected final JSONObject getItemAtArray(int index, JSONArray jsonArray)
+    {
+        if(preTreatment(index, jsonArray))
+        {
+            Object object = jsonArray.get(index);
+            if(object instanceof JSONObject)
+            {
+                return (JSONObject) object;
+            }else
+            {
+                System.out.println("Index: " + index +"'s value is Not JSONObject");
+            }
+        }
+        return null;
+    }
 
-    public abstract Object getPropertyAtArray(int index, JSONArray jsonArray);
+    protected final Object getPropertyAtArray(int index, JSONArray jsonArray)
+    {
+        if(preTreatment(index, jsonArray))
+        {
+            Object object = jsonArray.get(index);
+            if(object instanceof String || object instanceof Number || object instanceof Boolean || object == null)
+            {
+                return object;
+            }else
+            {
+                System.out.println("Index: " + index +"'s format is INVALID");
+            }
+        }
+        return null;
+    }
 
     private final boolean preTreatment(String key, JSONObject jsonObject)
     {
