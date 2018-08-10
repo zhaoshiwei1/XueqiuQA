@@ -21,7 +21,7 @@ public abstract class XqApi
     private Boolean ifAuthorized = false;
     private String jsonSchemaFilePath = null;
 
-    protected final void setJsonSchemaFilePath(String jsonSchemaFilePath)
+    public final void setJsonSchemaFilePath(String jsonSchemaFilePath)
     {
         this.jsonSchemaFilePath = jsonSchemaFilePath;
     }
@@ -35,7 +35,7 @@ public abstract class XqApi
     }
 
 
-    protected final JSONObject getResponse(Map<String, String> parameterList)
+    public final JSONObject getResponse(Map<String, String> parameterList)
     {
         this.ifAuthorized = false;
         HttpExecutor httpExecutor = new HttpExecutor(this.requestURL, this.domainURL, parameterList, this.httpMethod,
@@ -52,7 +52,7 @@ public abstract class XqApi
         }
     }
 
-    protected final JSONObject getResponse(Map<String, String> parameterList, TestAccount testAccount)
+    public final JSONObject getResponse(Map<String, String> parameterList, TestAccount testAccount)
     {
         if(null == testAccount)
         {
@@ -77,7 +77,7 @@ public abstract class XqApi
 
     }
 
-    protected final Boolean SchemaValidation(JSONObject actualJsonObject) {
+    public final Boolean SchemaValidation(JSONObject actualJsonObject) {
 
         if(this.jsonSchemaFilePath.equals(null))
         {
@@ -100,7 +100,7 @@ public abstract class XqApi
 
     }
 
-    protected final JSONObject getJsonObject(String key, JSONObject jsonObject)
+    public final JSONObject getJsonObject(String key, JSONObject jsonObject)
     {
         if(preTreatment(key, jsonObject))
         {
@@ -117,7 +117,7 @@ public abstract class XqApi
         return null;
     }
 
-    protected final Object getJsonProperty(String key, JSONObject jsonObject)
+    public final Object getJsonProperty(String key, JSONObject jsonObject)
     {
         if(preTreatment(key,jsonObject))
         {
@@ -133,7 +133,7 @@ public abstract class XqApi
         return null;
     }
 
-    protected final JSONArray getJsonArray(String key, JSONObject jsonObject)
+    public final JSONArray getJsonArray(String key, JSONObject jsonObject)
     {
         if(preTreatment(key, jsonObject))
         {
@@ -149,7 +149,7 @@ public abstract class XqApi
         return null;
     }
 
-    protected final JSONObject getItemAtArray(int index, JSONArray jsonArray)
+    public final JSONObject getItemAtArray(int index, JSONArray jsonArray)
     {
         if(preTreatment(index, jsonArray))
         {
@@ -165,7 +165,7 @@ public abstract class XqApi
         return null;
     }
 
-    protected final Object getPropertyAtArray(int index, JSONArray jsonArray)
+    public final Object getPropertyAtArray(int index, JSONArray jsonArray)
     {
         if(preTreatment(index, jsonArray))
         {
