@@ -29,8 +29,18 @@ public abstract class XqApi
 
     public XqApi(String hostURL, String resourceURL, HttpMethod httpMethod)
     {
-        this.requestURL = hostURL + resourceURL;
-        this.domainURL = hostURL;
+
+        String[] list = hostURL.split("://");
+        if(list.length>1)
+        {
+            this.requestURL = hostURL + resourceURL;
+            this.domainURL = list[1];
+        }else
+        {
+            this.requestURL = "https://" + hostURL + resourceURL;
+            this.domainURL = hostURL;
+        }
+
         this.httpMethod = httpMethod;
     }
 
@@ -79,7 +89,7 @@ public abstract class XqApi
 
     public final Boolean SchemaValidation(JSONObject actualJsonObject) {
 
-        if(this.jsonSchemaFilePath.equals(null))
+        if(this.jsonSchemaFilePath == null)
         {
             System.out.println("JsonSchema File Path is not set!");
             return false;

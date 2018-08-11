@@ -1,0 +1,103 @@
+{"$id": "https://stock.xueqiu.com/v5/stock/bar/ib/margin.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "$id": "/properties/data/properties/symbol",
+          "type": "string",
+          "title": "The Symbol Schema ",
+          "default": "",
+          "examples": [
+            "XONE"
+          ]
+        },
+        "short_fee_rate": {
+          "$id": "/properties/data/properties/short_fee_rate",
+          "type": "string",
+          "title": "The Short_fee_rate Schema ",
+          "default": "",
+          "examples": [
+            "10.61%"
+          ]
+        },
+        "overnight_margin": {
+          "$id": "/properties/data/properties/overnight_margin",
+          "type": "string",
+          "title": "The Overnight_margin Schema ",
+          "default": "",
+          "examples": [
+            "100.00%"
+          ]
+        },
+        "interest_rate": {
+          "$id": "/properties/data/properties/interest_rate",
+          "type": "string",
+          "title": "The Interest_rate Schema ",
+          "default": "",
+          "examples": [
+            "2.21%"
+          ]
+        },
+        "long_initial_margin": {
+          "$id": "/properties/data/properties/long_initial_margin",
+          "type": "string",
+          "title": "The Long_initial_margin Schema ",
+          "default": "",
+          "examples": [
+            "100.00%"
+          ]
+        },
+        "long_maintenance_margin": {
+          "$id": "/properties/data/properties/long_maintenance_margin",
+          "type": "string",
+          "title": "The Long_maintenance_margin Schema ",
+          "default": "",
+          "examples": [
+            "100.00%"
+          ]
+        },
+        "short_margin": {
+          "$id": "/properties/data/properties/short_margin",
+          "type": "string",
+          "title": "The Short_margin Schema ",
+          "default": "",
+          "examples": [
+            "100.00%"
+          ]
+        },
+        "short_available": {
+          "$id": "/properties/data/properties/short_available",
+          "type": "integer",
+          "title": "The Short_available Schema ",
+          "default": 0,
+          "examples": [
+            250000
+          ]
+        }
+      }
+    },
+    "error_code": {
+      "$id": "/properties/error_code",
+      "type": "integer",
+      "title": "The Error_code Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "error_description": {
+      "$id": "/properties/error_description",
+      "type": "string",
+      "title": "The Error_description Schema ",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    }
+  }
+}

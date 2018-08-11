@@ -1,6 +1,6 @@
 package Stock.testScripts;
 
-import Stock.api.v5.stock.bar.ib.Margin;
+import Stock.v5.stock.bar.ib.api.Margin;
 import com.xueqiu.qa.GlobalDefine.TestAccount;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -20,7 +20,7 @@ public class getMarginDataBySymbol
     public void setUp()
     {
         this.margin = new Margin();
-        this.margin.setJsonSchemaFilePath("");
+        this.margin.setJsonSchemaFilePath("src/test/java/Stock/v5/stock/bar/ib/schema/Margin.json");
         this.testAccount = new TestAccount(
                 "18515668408",
                 "1234qwer",
@@ -40,15 +40,21 @@ public class getMarginDataBySymbol
     {
         Map<String, String> parameterList = new HashMap<>();
         parameterList.put("symbol", "XONE");
-        JSONObject jsonObject = margin.getResponse(parameterList, this.testAccount);
-        System.out.println(jsonObject);
-        Assert.assertTrue(true);
+
+        JSONObject jsonObject = this.margin.getResponse(parameterList, this.testAccount);
+
+        Assert.assertTrue(this.margin.SchemaValidation(jsonObject));
+
+
+        int short_num = (int)this.margin.getJsonProperty("short_available",
+                this.margin.getJsonObject("data", jsonObject));
+
+        Assert.assertTrue(short_num == 250000, "short_available number error");
     }
 
     @AfterTest
     public void tearDown()
     {
-        System.out.println("tearDown");
     }
 }
 
