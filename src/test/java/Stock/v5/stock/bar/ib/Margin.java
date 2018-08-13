@@ -1,4 +1,4 @@
-package Stock.v5.stock.bar.ib.api;
+package Stock.v5.stock.bar.ib;
 
 import com.xueqiu.qa.ApiBase.XqApi;
 import com.xueqiu.qa.ExecutorUtility.HttpMethod;
