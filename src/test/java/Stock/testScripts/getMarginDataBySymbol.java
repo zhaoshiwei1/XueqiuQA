@@ -45,7 +45,7 @@ public class getMarginDataBySymbol
         );
     }
 
-    @Test
+    @Test (enabled = true)
     public void getMarginWithValidSymbol()
     {
         Map<String, String> parameterList = new HashMap<>();
@@ -62,16 +62,16 @@ public class getMarginDataBySymbol
         Assert.assertTrue(short_num == 250000, "short_available number error");
     }
 
-/*
-    @Test
+
+    @Test (enabled = false)
     public void checkIfInMarginList()
     {
         Map<String, String> marginParameter = new HashMap<>();
         marginParameter.put("symbol","SDRL");
-
         JSONObject jsonObject = this.margin.getResponse(marginParameter, testAccount);
-
         Assert.assertTrue(this.margin.SchemaValidation(jsonObject), "Schema Validation Failed");
+
+
         Map<String, String> marginListParameter = new HashMap<>();
         marginListParameter.put("page", "1");
         marginListParameter.put("size", "30");
@@ -79,7 +79,6 @@ public class getMarginDataBySymbol
         marginListParameter.put("order", "asc");
         marginListParameter.put("exchange_area", "US");
         marginListParameter.put("type", "all");
-
 
         int page = 1;
         Boolean ifFound = false;
@@ -92,6 +91,11 @@ public class getMarginDataBySymbol
             System.out.println(currentPage);
             marginListParameter.put("page", String.valueOf(page+1));
             JSONObject nextPage = this.list.getResponse(marginListParameter, testAccount);
+
+            /*
+            * 检查当前页面是否是分页最后一页
+            * */
+
             if(currentPage.equals(nextPage) || this.list.getJsonArray("items",
                     this.list.getJsonObject("data", nextPage)).length()==0)
             {
@@ -118,7 +122,6 @@ public class getMarginDataBySymbol
 
     }
 
-*/
 
     public boolean checkIfInList(String symbol, ArrayList<String> list)
     {
