@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" afterPath="$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" afterPath="$PROJECT_DIR$/ReadMe.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,9 +19,11 @@
       <file leaf-file-name="getMarginDataBySymbol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1679">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/List.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadMe.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -91,16 +103,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="51" column="67" lean-forward="false" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -151,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/GlobalDefine.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestNGPortfolio/Stock" />
@@ -202,11 +203,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/page2.json" />
         <option value="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/List.java" />
         <option value="$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" />
+        <option value="$PROJECT_DIR$/ReadMe.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
+    <option name="x" value="183" />
     <option name="y" value="23" />
     <option name="width" value="1393" />
     <option name="height" value="877" />
@@ -994,7 +996,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534146530100</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Version I complete!">
+      <created>1534209416529</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1534209416529</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1039,7 +1048,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="23" width="1393" height="877" extended-state="0" />
+    <frame x="183" y="23" width="1393" height="877" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1111,7 +1120,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Test git 1" />
     <MESSAGE value="paper" />
     <MESSAGE value="GlobalDefine, and password encryption!" />
     <MESSAGE value="Complete HttpUtility" />
@@ -1136,7 +1144,8 @@
     <MESSAGE value="Demo test case" />
     <MESSAGE value="Demo test case complete!" />
     <MESSAGE value="Add complex demo case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add complex demo case" />
+    <MESSAGE value="Version I complete!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version I complete!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,13 +1206,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/Executor.java" />
-    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/executor/TestAccountAuthorized.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1383,14 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1679">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Stock/v5/stock/bar/ib/Margin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1411,6 +1405,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding />
         </state>
       </provider>
