@@ -1,5 +1,7 @@
 package com.xueqiu.qa.GlobalDefine;
 
+import java.util.ArrayList;
+
 public class GlobalDefine
 {
     /*

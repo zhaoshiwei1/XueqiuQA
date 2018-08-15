@@ -10,8 +10,8 @@ Version 1.0
 
 Review Result of Version 1.0
 1, Https is not correctly configured, currently is using default http, client is not verified.
-2, API definition should use direct name, including URI path, API definition should support quantity production.
+2, API definition should use direct name, including URI path, API definition should support quantity production. (Done)
 3, TestAccount instance, logged in for every request fire, should be removed.
-4, Response analyze, should support getting via absolute path.
+4, Response analyze, should support getting via absolute path. (Done)
 5, (Low priority) Log.
 6, (Low priority) Switch test environment.
