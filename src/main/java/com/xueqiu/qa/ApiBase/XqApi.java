@@ -141,7 +141,7 @@ public class XqApi
         }
     }
 
-    public Object jsonAnalyze(String[] path, JSONObject jsonObject)
+    private Object jsonAnalyze(String[] path, JSONObject jsonObject)
     {
         if(path.length == 1 && path.length > 0)
         {
@@ -155,7 +155,7 @@ public class XqApi
         return null;
     }
 
-    public Object parse(String path)
+    public final Object parse(String path)
     {
         JSONObject jsonObject = this.responseJSONObject;
         String[] pathList = path.split("/");
@@ -163,7 +163,7 @@ public class XqApi
         return  jsonAnalyze(pathList, jsonObject);
     }
 
-    public Object parse(String path, JSONObject jsonObject)
+    public final Object parse(String path, JSONObject jsonObject)
     {
         String[] pathList = path.split("/");
         return jsonAnalyze(pathList, jsonObject);

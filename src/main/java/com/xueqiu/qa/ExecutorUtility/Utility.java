@@ -50,7 +50,9 @@ public class Utility
             f.setAccessible(true);
             // 设置些属性是可以访问的
             try {
-                    list.put(f.getName(), (String) f.get(obj));
+                    if(!f.getName().equals("cookieStore")) {
+                        list.put(f.getName(), (String) f.get(obj));
+                    }
                 }
             catch (IllegalArgumentException e) {
                 e.printStackTrace();

@@ -26,6 +26,8 @@ public class TestAccount
     public String is_register;
     public String sid;
 
+    public CookieStore cookieStore = null;
+
     public TestAccount(String telephone, String password, String areacode, String captcha, String client_id,
                        String client_secret, String device_uuid, String grant_type, String is_register, String sid)
     {
@@ -43,39 +45,47 @@ public class TestAccount
 
     public CookieStore getCookieStore(TestAccount testAccount, String domainURL)
     {
-        Map<String, String> loginParameterList = Utility.getKeyAndValue(testAccount);
-        String plainPassword = loginParameterList.get("password");
-        String encryptPassword = Utility.encryptMD5(plainPassword);
-        loginParameterList.put("password", encryptPassword);
-
-        HttpUtility httpUtility = new HttpUtility();
-        HttpResponse httpResponse = httpUtility.post(GlobalDefine.loginURL, loginParameterList);
-        if(httpResponse.getStatusLine().getStatusCode() == 200)
+        if(this.cookieStore == null)
         {
-            String strResult = "";
-            try {
-                strResult = EntityUtils.toString(httpResponse.getEntity());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            JSONObject jsonObject = new JSONObject(strResult);
-            String access_token = jsonObject.getString(GlobalDefine.access_token);
-            try {
-                httpUtility.finalize();
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
+            Map<String, String> loginParameterList = Utility.getKeyAndValue(testAccount);
+            String plainPassword = loginParameterList.get("password");
+            String encryptPassword = Utility.encryptMD5(plainPassword);
+            loginParameterList.put("password", encryptPassword);
+
+            HttpUtility httpUtility = new HttpUtility();
+            HttpResponse httpResponse = httpUtility.post(GlobalDefine.loginURL, loginParameterList);
+            if(httpResponse.getStatusLine().getStatusCode() == 200)
+            {
+                String strResult = "";
+                try {
+                    strResult = EntityUtils.toString(httpResponse.getEntity());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                JSONObject jsonObject = new JSONObject(strResult);
+                String access_token = jsonObject.getString(GlobalDefine.access_token);
+                try {
+                    httpUtility.finalize();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                }
+
+                CookieStore cookieStore = new BasicCookieStore();
+                BasicClientCookie xq_a_token = new BasicClientCookie(GlobalDefine.tokenName, access_token);
+                xq_a_token.setVersion(GlobalDefine.cookieVersion);
+                xq_a_token.setDomain(domainURL);
+                xq_a_token.setPath(GlobalDefine.path);
+                cookieStore.addCookie(xq_a_token);
+                this.cookieStore = cookieStore;
+                return cookieStore;
+            }else
+            {
+                return null;
             }
 
-            CookieStore cookieStore = new BasicCookieStore();
-            BasicClientCookie xq_a_token = new BasicClientCookie(GlobalDefine.tokenName, access_token);
-            xq_a_token.setVersion(GlobalDefine.cookieVersion);
-            xq_a_token.setDomain(domainURL);
-            xq_a_token.setPath(GlobalDefine.path);
-            cookieStore.addCookie(xq_a_token);
-            return cookieStore;
         }else
         {
-            return null;
+            return this.cookieStore;
         }
 
     }

@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80222d7c-61d9-4cdc-9be1-283b9818b653" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Stock/JsonSchema/list.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Stock/JsonSchema/margin.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Stock/Stock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Stock/StockApiDefine.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/main.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ReadMe.txt" afterPath="$PROJECT_DIR$/ReadMe.txt" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/v5/stock/bar/ib/Margin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/v5/stock/bar/ib/Margin.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/List.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/List.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" afterPath="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,28 +22,8 @@
       <file leaf-file-name="XqApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="168" column="49" lean-forward="false" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadMe.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReadMe.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="69" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+            <state relative-caret-position="842">
+              <caret line="165" column="17" lean-forward="true" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -72,8 +42,8 @@
       <file leaf-file-name="ApiFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#407#408#0" expanded="true" />
@@ -86,18 +56,8 @@
       <file leaf-file-name="StockApiDefine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Stock/StockApiDefine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="98" lean-forward="true" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalDefine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="105">
+              <caret line="7" column="96" lean-forward="false" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -106,22 +66,29 @@
       <file leaf-file-name="TestAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Stock/Stock.java">
+      <file leaf-file-name="ReadMe.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding>
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/test/java/APIDefinition/AbstractTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/APIDefinition/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/SchemaValidationExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/HttpExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/SchemaValidation.java" />
         <option value="$PROJECT_DIR$/src/test/java/StockBackEndTest/Schema/response.json" />
@@ -198,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/page2.json" />
         <option value="$PROJECT_DIR$/src/test/java/Stock/v5/stock/ib/margin/List.java" />
         <option value="$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xueqiu/qa/temp.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xueqiu/qa/ApiInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java" />
@@ -210,8 +175,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Stock/Stock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/main.java" />
-        <option value="$PROJECT_DIR$/ReadMe.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java" />
+        <option value="$PROJECT_DIR$/ReadMe.txt" />
       </list>
     </option>
   </component>
@@ -272,6 +239,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XueqiuQA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="ExecutorUtility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XueqiuQA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qa" type="462c0819:PsiDirectoryNode" />
+              <item name="GlobalDefine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XueqiuQA" type="b2602c69:ProjectViewProjectNode" />
@@ -956,7 +941,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534214206956</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="2, API definition should use direct name, including URI path, API definition should support quantity production. (Done)&#10;&#10;4, Response analyze, should support getting via absolute path. (Done)">
+      <created>1534328812934</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1534328812934</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1073,7 +1065,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="GlobalDefine, and password encryption!" />
     <MESSAGE value="Complete HttpUtility" />
     <MESSAGE value="Try testng xml" />
     <MESSAGE value="config cookie store" />
@@ -1098,11 +1089,12 @@
     <MESSAGE value="Add complex demo case" />
     <MESSAGE value="Version I complete!" />
     <MESSAGE value="Update review results of Version 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update review results of Version 1" />
+    <MESSAGE value="2, API definition should use direct name, including URI path, API definition should support quantity production. (Done)&#10;&#10;4, Response analyze, should support getting via absolute path. (Done)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2, API definition should use direct name, including URI path, API definition should support quantity production. (Done)&#10;&#10;4, Response analyze, should support getting via absolute path. (Done)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1243,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/xueqiu/qa/Stock/StockGlobalDefine.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Stock/testScripts/getMarginDataBySymbol.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Stock/StockGlobalDefine.java" />
@@ -1269,6 +1254,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Stock/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1280,26 +1273,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Stock/StockApiDefine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="98" lean-forward="true" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
+        <state relative-caret-position="842">
+          <caret line="165" column="17" lean-forward="true" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1314,8 +1291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
@@ -1324,26 +1301,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/lang/System.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/GlobalDefine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="492" column="30" lean-forward="false" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ApiBase/XqApi.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Stock/StockApiDefine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="168" column="49" lean-forward="false" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+        <state relative-caret-position="105">
+          <caret line="7" column="96" lean-forward="false" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/ExecutorUtility/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xueqiu/qa/GlobalDefine/TestAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="69" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="69" />
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="84" />
           <folding />
         </state>
       </provider>
