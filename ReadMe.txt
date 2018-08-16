@@ -16,3 +16,7 @@ Review Result of Version 1.0
 5, (Low priority) Log.
 6, (Low priority) Switch test environment.
 7, (Low priority) Deploy to Jenkins.
+
+To do:
+1, change json schema lib: everit -> FGE. Version 3
+2, Reduce login times, implement log and test environment, deploy to Jenkins. Version 2

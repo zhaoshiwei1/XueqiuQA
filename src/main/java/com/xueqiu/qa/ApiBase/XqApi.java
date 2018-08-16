@@ -10,6 +10,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.xueqiu.qa.ExecutorUtility.Utility.fileToJson;
 
@@ -141,16 +143,35 @@ public class XqApi
         }
     }
 
-    private Object jsonAnalyze(String[] path, JSONObject jsonObject)
+    private Object jsonAnalyze(String[] path, Object jsonObject)
     {
-        if(path.length == 1 && path.length > 0)
+        if(path.length == 1)
         {
-            return jsonObject.get(path[0]);
+            int arrayPath = stringAnalyze(path[0]);
+            if(arrayPath == -1 && jsonObject instanceof JSONObject)
+            {
+                return ((JSONObject)jsonObject).get(path[0]);
+            }else
+            {
+                if(jsonObject instanceof JSONArray)
+                {
+                    return ((JSONArray) jsonObject).get(arrayPath);
+                }
+            }
         }else if(path.length > 1)
         {
             String[] dpath = new String[path.length - 1];
             System.arraycopy(path, 1, dpath, 0,path.length-1);
-            return jsonAnalyze(dpath, (JSONObject) jsonObject.get(path[0]));
+
+            int arrayPath = stringAnalyze(path[0]);
+            if(arrayPath == -1 && jsonObject instanceof JSONObject)
+            {
+                return jsonAnalyze(dpath, ((JSONObject)jsonObject).get(path[0]));
+            }else if(arrayPath > 1 && jsonObject instanceof JSONArray)
+            {
+                return jsonAnalyze(dpath, ((JSONArray) jsonObject).get(arrayPath));
+            }
+
         }
         return null;
     }
@@ -158,15 +179,54 @@ public class XqApi
     public final Object parse(String path)
     {
         JSONObject jsonObject = this.responseJSONObject;
-        String[] pathList = path.split("/");
+        String[] pathList = path.split("\\.");
 
         return  jsonAnalyze(pathList, jsonObject);
     }
 
     public final Object parse(String path, JSONObject jsonObject)
     {
-        String[] pathList = path.split("/");
+        String[] pathList = path.split("\\.");
         return jsonAnalyze(pathList, jsonObject);
+    }
+
+    public final int stringAnalyze(String dPathString)
+    {
+
+        String regex = "(?<=\\[)(\\S+)(?=\\])";
+        Pattern pattern = Pattern.compile (regex);
+        Pattern numPattern = Pattern.compile("^[-\\+]?[\\d]*$");
+            Matcher matcher = pattern.matcher(dPathString);
+            if(matcher.find())
+            {
+/*
+                System.out.println(matcher.group());
+*/
+
+                Matcher numMatcher = numPattern.matcher(matcher.group());
+
+                if(numMatcher.find())
+                {
+/*
+                    System.out.println(numMatcher.group());
+*/
+                    String[] bread = dPathString.split("\\[");
+                    if(bread[0].length()==0)
+                    {
+/*
+                        System.out.println(bread[0]);
+                        System.out.println(numMatcher.group());
+*/
+                        return Integer.valueOf(numMatcher.group());
+
+/*
+                        itemMap.put(bread[0], Integer.valueOf(numMatcher.group()));
+*/
+                    }
+
+                }
+            }
+        return -1;
     }
 
 }
