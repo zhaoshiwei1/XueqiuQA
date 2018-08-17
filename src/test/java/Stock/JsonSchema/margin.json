@@ -1,1 +1,87 @@
-{}
+{
+  "$id": "https://stock.xueqiu.com/v5/stock/chart/kline.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "$id": "/properties/data/properties/symbol",
+          "type": "string",
+          "title": "The Symbol Schema ",
+          "default": "",
+          "examples": [
+            "IBKR"
+          ]
+        },
+        "column": {
+          "$id": "/properties/data/properties/column",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/column/items",
+            "type": "string",
+            "title": "The 0th Schema ",
+            "default": "",
+            "examples": [
+              "timestamp",
+              "volume",
+              "open",
+              "high",
+              "low",
+              "close",
+              "chg",
+              "percent",
+              "turnoverrate"
+            ]
+          }
+        },
+        "item": {
+          "$id": "/properties/data/properties/item",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/item/items",
+            "type": "array",
+            "items": {
+              "$id": "/properties/data/properties/item/items/items",
+              "type": ["integer","float", "double", null],
+              "title": "The 0th Schema ",
+              "default": 0,
+              "examples": [
+                1478059200000,
+                375958,
+                32.109901428222656,
+                32.23789978027344,
+                31.646900177001953,
+                31.804500579833984,
+                -0.35370001196861267,
+                -1.100000023841858,
+                0.09000000357627869
+              ]
+            }
+          }
+        }
+      }
+    },
+    "error_code": {
+      "$id": "/properties/error_code",
+      "type": "integer",
+      "title": "The Error_code Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "error_description": {
+      "$id": "/properties/error_description",
+      "type": "string",
+      "title": "The Error_description Schema ",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    }
+  }
+}

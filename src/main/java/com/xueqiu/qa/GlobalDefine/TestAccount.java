@@ -53,6 +53,7 @@ public class TestAccount
             loginParameterList.put("password", encryptPassword);
 
             HttpUtility httpUtility = new HttpUtility();
+            System.out.println("********************SendPost**********************");
             HttpResponse httpResponse = httpUtility.post(GlobalDefine.loginURL, loginParameterList);
             if(httpResponse.getStatusLine().getStatusCode() == 200)
             {

@@ -22,4 +22,17 @@ public class GlobalDefine
     public static final String access_token = "access_token";
 
     public static final String separator = "%&%";
+
+    public static TestAccount testAccount = new TestAccount(
+            "18515668408",
+            "1234qwer",
+            "86",
+            "",
+            "WiCimxpj5H",
+            "TM69Da3uPkFzIdxpTEm6hp",
+            "F63B3A17-54F0-4DC3-8B82-3390AA1751C2",
+            "password",
+            "0",
+            "F63B3A17-54F0-4DC3-8B82-3390AA1751C2"
+    );
 }

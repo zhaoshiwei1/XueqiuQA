@@ -2,7 +2,7 @@
 <suite name="Stock suite" verbose="1" >
     <test name = "Stock" >
         <packages>
-            <package name = "StockBackEndTest" />
+            <package name = "Stock.testScripts" />
         </packages>
     </test>
 </suite>
