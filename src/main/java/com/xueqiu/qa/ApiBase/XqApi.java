@@ -150,28 +150,48 @@ public class XqApi
             int arrayPath = stringAnalyze(path[0]);
             if(arrayPath == -1 && jsonObject instanceof JSONObject)
             {
-                return ((JSONObject)jsonObject).get(path[0]);
+                if(checkKey(path[0] ,(JSONObject)jsonObject))
+                {
+                    return ((JSONObject)jsonObject).get(path[0]);
+                }else
+                {
+                    System.out.println("Key: " + path[0] + " Not In JSONObject");
+                }
+
             }else
             {
-                if(jsonObject instanceof JSONArray)
+                if(jsonObject instanceof JSONArray && arrayPath < ((JSONArray) jsonObject).length())
                 {
                     return ((JSONArray) jsonObject).get(arrayPath);
+                }else
+                {
+                    System.out.println( "Index: " + arrayPath +" Out Of Array Range!" );
                 }
             }
         }else if(path.length > 1)
         {
             String[] dpath = new String[path.length - 1];
             System.arraycopy(path, 1, dpath, 0,path.length-1);
-
             int arrayPath = stringAnalyze(path[0]);
             if(arrayPath == -1 && jsonObject instanceof JSONObject)
             {
-                return jsonAnalyze(dpath, ((JSONObject)jsonObject).get(path[0]));
-            }else if(arrayPath > 1 && jsonObject instanceof JSONArray)
+                if(checkKey(path[0] ,(JSONObject)jsonObject))
+                {
+                    return jsonAnalyze(dpath, ((JSONObject)jsonObject).get(path[0]));
+                }else
+                {
+                    System.out.println("Key: " + path[0] + " Not In JSONObject");
+                }
+            }else
             {
-                return jsonAnalyze(dpath, ((JSONArray) jsonObject).get(arrayPath));
+                if(jsonObject instanceof JSONArray && arrayPath < ((JSONArray) jsonObject).length())
+                {
+                    return jsonAnalyze(dpath, ((JSONArray) jsonObject).get(arrayPath));
+                }else
+                {
+                    System.out.println( "Index: " + arrayPath +" Out Of Array Range!" );
+                }
             }
-
         }
         return null;
     }
@@ -190,11 +210,9 @@ public class XqApi
         return jsonAnalyze(pathList, jsonObject);
     }
 
-    public final int stringAnalyze(String dPathString)
+    private final int stringAnalyze(String dPathString)
     {
-
-        String regex = "(?<=\\[)(\\S+)(?=\\])";
-        Pattern pattern = Pattern.compile (regex);
+        Pattern pattern = Pattern.compile ("(?<=\\[)(\\S+)(?=\\])");
         Pattern numPattern = Pattern.compile("^[-\\+]?[\\d]*$");
             Matcher matcher = pattern.matcher(dPathString);
             if(matcher.find())
@@ -227,6 +245,19 @@ public class XqApi
                 }
             }
         return -1;
+    }
+
+    private boolean checkKey(String key, JSONObject jsonObject)
+    {
+        Iterator<?> iterator = jsonObject.keys();
+        while (iterator.hasNext())
+        {
+            if(iterator.next().equals(key))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
