@@ -30,7 +30,7 @@ public class DoHttpConfig extends HttpUtility
         this.cookieStore = cookieStore;
     }
 
-    public String doRequest()
+    public String doRequest() throws Exception
     {
         HttpResponse httpResponse = null;
         if(this.cookieStore == null)

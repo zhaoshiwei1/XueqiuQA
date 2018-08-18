@@ -22,7 +22,7 @@ public class mainTest
     }
 
     @Test(enabled = true)
-     public void getData()
+     public void getData() throws Exception
     {
         Map<String, String> parameterList= new HashMap<>();
         parameterList.put("symbol", "SZ000795");
@@ -32,9 +32,15 @@ public class mainTest
         this.stock.init("/v5/stock/chart/kline.json");
         this.stock.api.send(parameterList, GlobalDefine.testAccount);
 
+/*
+        this.stock.api.schemaValidation();
+*/
+
         double ma20 = (double) stock.api.parse("data.item.[0].[4]");
 
-        Assert.assertTrue((ma20 == 5.38), "ma20 value error: expected: 10.0; Actual: " + ma20);
+        Assert.assertTrue((ma20 == 10), "ma20 value error: expected: 10.0; Actual: " + ma20);
+
+
     }
 
 

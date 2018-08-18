@@ -21,9 +21,9 @@ public class HttpUtility
 
     public CloseableHttpClient httpClient = null;
 
-    public HttpResponse post(String url, Map<String, String> parameterList)
+    public HttpResponse post(String url, Map<String, String> parameterList) throws Exception
     {
-        this.httpClient = HttpClients.createDefault();
+        this.httpClient = HttpClients.custom().setSSLSocketFactory(Utility.fileToSSL()).build();
         HttpResponse httpResponse = null;
         try {
             HttpPost httpPost = new HttpPost(url);
@@ -44,9 +44,9 @@ public class HttpUtility
         return httpResponse;
     }
 
-    public HttpResponse post(String url, Map<String, String> parameterList, CookieStore cookieStore)
+    public HttpResponse post(String url, Map<String, String> parameterList, CookieStore cookieStore) throws Exception
     {
-        this.httpClient = HttpClients.custom()
+        this.httpClient = HttpClients.custom().setSSLSocketFactory(Utility.fileToSSL())
                 .setDefaultCookieStore(cookieStore)
                 .build();
         HttpResponse httpResponse = null;
@@ -69,9 +69,10 @@ public class HttpUtility
         return httpResponse;
     }
 
-    public HttpResponse get(String url, Map<String, String> parameterList)
+    public HttpResponse get(String url, Map<String, String> parameterList) throws Exception
     {
-        this.httpClient = HttpClients.createDefault();
+        this.httpClient = HttpClients.custom().setSSLSocketFactory(Utility.fileToSSL())
+                .build();
         HttpResponse httpResponse = null;
         String urlWithParameter = url + "?";
         Iterator iterator = parameterList.entrySet().iterator();
@@ -89,9 +90,9 @@ public class HttpUtility
         return httpResponse;
     }
 
-    public HttpResponse get(String url, Map<String, String> parameterList, CookieStore cookieStore)
+    public HttpResponse get(String url, Map<String, String> parameterList, CookieStore cookieStore) throws Exception
     {
-        this.httpClient = HttpClients.custom()
+        this.httpClient = HttpClients.custom().setSSLSocketFactory(Utility.fileToSSL())
                 .setDefaultCookieStore(cookieStore)
                 .build();
         HttpResponse httpResponse = null;

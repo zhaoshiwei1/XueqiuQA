@@ -11,7 +11,7 @@ public class HttpExecutor
     public DoHttpConfig doHttpConfig;
 
     public HttpExecutor(String requestURL, String domainURL, Map<String, String> parameterList,
-                                    HttpMethod httpMethod, TestAccount testAccount, Boolean ifAuthorized)
+                                    HttpMethod httpMethod, TestAccount testAccount, Boolean ifAuthorized) throws Exception
     {
         if(ifAuthorized&&(null!=testAccount))
         {
@@ -24,7 +24,7 @@ public class HttpExecutor
 
     }
 
-    public JSONObject getResponseJsonObject()
+    public JSONObject getResponseJsonObject() throws Exception
     {
         String strJsonObject = this.doHttpConfig.doRequest();
         if(null == strJsonObject)

@@ -1,13 +1,42 @@
 package com.xueqiu.qa.ExecutorUtility;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+import org.apache.http.ssl.TrustStrategy;
 import org.json.JSONObject;
 
+import javax.net.ssl.SSLContext;
 import java.io.File;
+import java.io.FileInputStream;
+import java.security.KeyStore;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
+
+import java.io.File;
+
+import java.io.FileInputStream;
+
+import java.security.KeyStore;
+
+import javax.net.ssl.SSLContext;
+
+import org.apache.http.HttpEntity;
+
+import org.apache.http.client.methods.CloseableHttpResponse;
+
+import org.apache.http.client.methods.HttpGet;
+
+import org.apache.http.conn.ssl.SSLContexts;
+
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+
+import org.apache.http.impl.client.CloseableHttpClient;
+
+import org.apache.http.impl.client.HttpClients;
+
+import org.apache.http.util.EntityUtils;
 
 import java.lang.reflect.Field;
 
@@ -78,5 +107,30 @@ public class Utility
         return rawSchema;
     }
 
+    public static SSLConnectionSocketFactory fileToSSL() throws Exception
+    {
+        KeyStore trustStore  = KeyStore.getInstance(KeyStore.getDefaultType());
+
+
+        FileInputStream instream = new FileInputStream(new File("src/main/java/com/xueqiu/qa/xq.keystore"));
+
+        try {
+
+            trustStore.load(instream, "xueqiu".toCharArray());
+
+        } finally {
+
+            instream.close();
+
+        }
+
+        SSLContext sslcontext = SSLContexts.custom().loadTrustMaterial(trustStore).build();
+
+        SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(sslcontext,
+
+                SSLConnectionSocketFactory.STRICT_HOSTNAME_VERIFIER);
+
+        return sslsf;
+    }
 
 }

@@ -51,7 +51,7 @@ public class XqApi
     }
 
 
-    public final JSONObject send(Map<String, String> parameterList)
+    public final JSONObject send(Map<String, String> parameterList) throws Exception
     {
         this.ifAuthorized = false;
         HttpExecutor httpExecutor = new HttpExecutor(this.requestURL, this.domainURL, parameterList, this.httpMethod,
@@ -70,7 +70,7 @@ public class XqApi
         }
     }
 
-    public final JSONObject send(Map<String, String> parameterList, TestAccount testAccount)
+    public final JSONObject send(Map<String, String> parameterList, TestAccount testAccount) throws Exception
     {
         if(null == testAccount)
         {
