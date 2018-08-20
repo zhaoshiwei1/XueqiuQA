@@ -38,7 +38,7 @@ public class mainTest
 
         double ma20 = (double) stock.api.parse("data.item.[0].[4]");
 
-        Assert.assertTrue((ma20 == 10), "ma20 value error: expected: 10.0; Actual: " + ma20);
+        Assert.assertTrue((ma20 == 5.38), "ma20 value error: expected: 10.0; Actual: " + ma20);
 
 
     }
