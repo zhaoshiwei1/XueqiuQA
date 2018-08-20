@@ -74,13 +74,23 @@ public class HttpUtility
         this.httpClient = HttpClients.custom().setSSLSocketFactory(Utility.fileToSSL())
                 .build();
         HttpResponse httpResponse = null;
-        String urlWithParameter = url + "?";
-        Iterator iterator = parameterList.entrySet().iterator();
-        while(iterator.hasNext()){
-            Map.Entry<String,String> elem = (Map.Entry<String, String>) iterator.next();
-            urlWithParameter += elem.getKey() + "=" + elem.getValue() + "&";
+
+        HttpGet httpGet = null;
+
+        if(parameterList == null)
+        {
+            String urlWithOutParameter = url;
+            httpGet = new HttpGet(urlWithOutParameter);
+        }else {
+            String urlWithParameter = url + "?";
+            Iterator iterator = parameterList.entrySet().iterator();
+            while (iterator.hasNext()) {
+                Map.Entry<String, String> elem = (Map.Entry<String, String>) iterator.next();
+                urlWithParameter += elem.getKey() + "=" + elem.getValue() + "&";
+            }
+
+            httpGet = new HttpGet(urlWithParameter);
         }
-        HttpGet httpGet = new HttpGet(urlWithParameter);
 
         try {
              httpResponse = this.httpClient.execute(httpGet);
@@ -96,13 +106,21 @@ public class HttpUtility
                 .setDefaultCookieStore(cookieStore)
                 .build();
         HttpResponse httpResponse = null;
-        String urlWithParameter = url + "?";
-        Iterator iterator = parameterList.entrySet().iterator();
-        while(iterator.hasNext()){
-            Map.Entry<String,String> elem = (Map.Entry<String, String>) iterator.next();
-            urlWithParameter += elem.getKey() + "=" + elem.getValue() + "&";
+        HttpGet httpGet = null;
+        if(parameterList == null)
+        {
+            String urlWithOutParameter = url;
+            httpGet = new HttpGet(urlWithOutParameter);
+        }else
+        {
+            String urlWithParameter = url + "?";
+            Iterator iterator = parameterList.entrySet().iterator();
+            while(iterator.hasNext()){
+                Map.Entry<String,String> elem = (Map.Entry<String, String>) iterator.next();
+                urlWithParameter += elem.getKey() + "=" + elem.getValue() + "&";
+            }
+            httpGet = new HttpGet(urlWithParameter);
         }
-        HttpGet httpGet = new HttpGet(urlWithParameter);
 
         try {
             httpResponse = this.httpClient.execute(httpGet);

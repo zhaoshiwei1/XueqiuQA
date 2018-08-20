@@ -50,6 +50,16 @@ public class XqApi
 
     }
 
+    public JSONObject send()
+    {
+        return null;
+    }
+
+    public JSONObject send(TestAccount testAccount)
+    {
+        return null;
+    }
+
 
     public final JSONObject send(Map<String, String> parameterList) throws Exception
     {

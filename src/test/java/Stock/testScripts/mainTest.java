@@ -26,20 +26,17 @@ public class mainTest
     {
         Map<String, String> parameterList= new HashMap<>();
         parameterList.put("symbol", "SZ000795");
-        parameterList.put("begin","1441290117582");
-        parameterList.put("period", "30m");
 
-        this.stock.init("/v5/stock/chart/kline.json");
-        this.stock.api.send(parameterList, GlobalDefine.testAccount);
+        System.out.println(this.stock.init("/v5/stock/bar/ib/margin.json")
+                .send(parameterList, GlobalDefine.testAccount));
 
-/*
+        this.stock.api.setJsonSchemaFilePath("filePathString");
+
         this.stock.api.schemaValidation();
-*/
 
-        double ma20 = (double) stock.api.parse("data.item.[0].[4]");
+        double ma20 = (double) this.stock.api.parse("data.item.[0].[4]");
 
         Assert.assertTrue((ma20 == 5.38), "ma20 value error: expected: 10.0; Actual: " + ma20);
-
 
     }
 
